@@ -6,9 +6,9 @@ import { MdEmail } from 'react-icons/md';
 const SocialMedia = () => {
         return (
                 <div className='app__social'>
-                        <div><BsWhatsapp /></div>
-                        <div><AiFillInstagram /></div>
-                        <div><MdEmail /></div>
+                        <div><a href="tel:+923028858466"><BsWhatsapp /></a></div>
+                        <div><a href="https://www.instagram.com/syed_shahzain_naqvi/"><AiFillInstagram /></a></div>
+                        <div><a href="mailto:zainulabideen.shah1214@gmail.com"><MdEmail /></a></div>
                 </div>
         )
 }
