@@ -3,7 +3,6 @@ import { HiOutlineMenu, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 
 import './Navbar.scss';
-import { images } from '../../constants';
 import Zain from '../../../../../Zain.png'
 
 const Navbar = () => {
@@ -23,7 +22,7 @@ const Navbar = () => {
                         <div className='app__navbar-menu'>
                                 <HiOutlineMenu onClick={() => setToggle(true)} />
                                 {toggle && (
-                                        <motion.div whileInView={{ x: [300, 0] }} transition={{ duration: 0.85, ease: 'easeInOut' }}>
+                                        <motion.div whileInView={{ x: [300, 0] }} transition={{ duration: 0.85, ease: 'easeOut' }}>
                                                 <HiX onClick={() => setToggle(false)} />
                                                 <ul>
                                                         {['home', 'about', 'work', 'skills', 'testimonials', 'contact'].map((item) => (<li key={item}>
